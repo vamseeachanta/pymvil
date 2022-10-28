@@ -3,29 +3,19 @@ requires      = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-<<<<<<< HEAD
 name = "pymvil"
 version = "0.0.1"
 description = "Multivariate Interpolation with Limits"
-=======
-name = "py_package"
-version = "0.0.1"
-description = "Python Package Cookiecutter Code"
->>>>>>> e9e7be03835c4943f1564efd0986251d92f63d10
 readme = "README.md"
-authors = [{ name = "Vamsee Achanta", email = "vamsee.achanta@aceengineer.com" }, { name = "Manoj Pydah", email = "manoj.pydah@aceengineer.com" }]
+authors = [{ name = "Vamsee Achanta", email = "vamsee.achanta@aceengineer.com" }]
 license = { file = "LICENSE" }
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
-<<<<<<< HEAD
-keywords=['Multivariate Interpolation', 'weather windows']
-=======
-keywords=['package', 'library', 'module']
->>>>>>> e9e7be03835c4943f1564efd0986251d92f63d10
-dependencies = ["numpy_financial", "pyyaml", "pandas", "numpy", "plotly", 'tomli; python_version < "3.11"']
+keywords=['Multivariate Interpolation', 'variable value at response limit', 'limiting operating conditions']
+dependencies = ["pyyaml", "pandas", "numpy", "plotly", 'tomli; python_version < "3.11"']
 requires-python = ">=3.7"
 
     [project.optional-dependencies]
@@ -33,19 +23,11 @@ requires-python = ">=3.7"
     dev   = ["black", "bumpver", "isort", "pytest"]
 
     [project.scripts]
-<<<<<<< HEAD
     mvil_interpolation = "pymvil.mvil_interpolation"
 
     [project.urls]
     repository    = "https://github.com/vamseeachanta/pymvil"
     documentation = "https://github.com/vamseeachanta/pymvil/blob/main/README.md"
-=======
-    pressure_pipe = "py_package.pressure_pipe"
-
-    [project.urls]
-    repository    = "https://github.com/vamseeachanta/py_package"
-    documentation = "https://github.com/vamseeachanta/py_package/blob/main/README.md"
->>>>>>> e9e7be03835c4943f1564efd0986251d92f63d10
 
 
 [tool.bumpver]
@@ -61,13 +43,8 @@ push            = false
         'current_version = "{version}"',
         'version = "{version}"',
     ]
-<<<<<<< HEAD
     "src/pymvil/__init__.py" = ["{version}"]
     "src/pymvil/__main__.py" = ["- pymvil v{version}"]
-=======
-    "src/py_package/__init__.py" = ["{version}"]
-    "src/py_package/__main__.py" = ["- leveraged-multi-family-analysis v{version}"]
->>>>>>> e9e7be03835c4943f1564efd0986251d92f63d10
 
 [tool.isort]
 profile                   = "black"

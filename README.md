@@ -1,21 +1,25 @@
-# Pipe wall
+# pymvil
 
-Oil and Gas industry has several wall thickness sizing codes 
-- Helps determine the python environment pacakge status and check if the packages are using the latest version. 
-- Help identify technical debt required to progress python projects to the latest distribution versions
+A Multi-Variate Interpolation for Limits (PYMVIL)
+- Helps to interpolate data over a number of dependent and independent variables. 
+- Interpolation method of piecewise linear is available
+- The algorithm assumes that the filter variable values in coords exist in data and are same
 
-# Assumptions
+# Usage
+
+See https://github.com/vamseeachanta/pymvil/blob/master/src/pymvil/tests/test_mvil_csv_no_monotonic_trend.py
+
+# Improvements
+
+**#TODO**
+- Further visualizations can be added to verify data results
+    - Parameter (and detailed) charts can be converted to 3D charts to include the independent variable trends to verify output 
+- Response of independent variable defined as greater than and less than (ge, le) can help create provide more flexibility to module. Currently acceptance trend is determined by assuming the first value of the group (irrespective of greater or lesser than limit) is acceptable.
+
+
+
 
 ### References
 
 
-
-[https://packaging.python.org/](https://packaging.python.org/)
-
-Guidelines to contribute to libraries:
-[https://pandas.pydata.org/docs/development/contributing.html#contributing](https://pandas.pydata.org/docs/development/contributing.html#contributing)
-
-| Name             | Description      | Hyperlink                                                                                |
-|:-----------------|:-----------------|:----------------------------------------------------------------------------|
-| ASME B31 or ANSI B31 | Pressure piping | [ASME B31 Overview](https://www.engineeringtoolbox.com/asme-b31pressure-piping-d_39.html) |
-
+https://www.geeksforgeeks.org/3d-scatter-plot-using-plotly-in-python/
